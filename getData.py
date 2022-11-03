@@ -26,14 +26,14 @@ def writeToFile(data_path, case, certanity="LOW"):
 
     with open(f"{data_path}\CIVIC_EVIDENCE_{[case['id']]}.tsv", 'w') as f:
                 f.write(f"Id\t{str(case['id'])}\n" + 
-                        f"VARIANT_NAME\t{(case['variant'])['name']}\n" +
-                        f"GENE_NAME\t{(case['gene'])['name']}\n" +
+                        f"VARIANT_NAME\t{case['variant']['name']}\n" +
+                        f"GENE_NAME\t{case['gene']['name']}\n" +
                         f"EVIDENCE_RATING\t{case['evidenceRating']}\n" +
                         f"EVIDENCE_LEVEL\t{case['evidenceLevel']}\n" +
                         f"CERTANITY\t{certanity}\n" +
-                        f"DISEASE_NAME\t{(case['disease'])['name']}\n" +
+                        f"DISEASE_NAME\t{case['disease']['name']}\n" +
                         f"DRUG_NAMES\t{drugs_inline_string}\n" +
-                        f"SOURCE_SOURCE_TYPE\t{(case['source'])['sourceType']}\n" +
+                        f"SOURCE_SOURCE_TYPE\t{case['source']['sourceType']}\n" +
                         f"DATE_SYNCHRONIZED\t{date_sync}")
                         
 def readJsonFromFile(path):
@@ -48,7 +48,7 @@ def readJsonFromFile(path):
     '''
     with open(path, "r") as f:
         data = json.load(f)
-        data = ( ( data['data'] )['evidenceItems'] )['nodes']
+        data = data['data']['evidenceItems']['nodes']
         return data
 
 def readFromJsonPayload(path):
@@ -86,7 +86,7 @@ def getDataFromApi(api_path, json_path):
     jsonPayload = readFromJsonPayload(json_path)
     data = requests.post(api_path, json=jsonPayload)
     data = data.json()
-    data = ( ( data['data'] )['evidenceItems'] )['nodes']
+    data = data['data']['evidenceItems']['nodes']
     return data
 
 
