@@ -1,0 +1,133 @@
+{
+    "data": {
+    "evidenceItems": {
+    "totalCount": 192,
+    "pageInfo": {
+        "endCursor": "NQ",
+        "hasNextPage": true
+        },
+        "nodes": [
+        {
+        "id": 7313,
+        "variant": {
+        "name": "Mutation"
+        },
+        "gene": {
+        "name": "PIK3CA"
+        },
+        "evidenceLevel": "A",
+        "evidenceRating": 5,
+        "disease": {
+        "name": "Breast Cancer"
+        },
+        "drugs": [
+        {
+        "name": "Alpelisib"
+        },
+        {
+        "name": "Fulvestrant"
+    }
+    ],
+    "source": {
+    "sourceType": "PUBMED"
+    }
+    },
+    {
+    "id": 1113,
+    "variant": {
+    "name": "Amplification"
+    },
+    "gene": {
+    "name": "ERBB2"
+    },
+    "evidenceLevel": "A",
+    "evidenceRating": 4,
+    "disease": {
+    "name": "Her2-receptor Positive Breast Cancer"
+    },
+    "drugs": [
+    {
+    "name": "Neratinib"
+    },
+    {
+        "name": "Trastuzumab"
+}
+],
+"source": {
+"sourceType": "PUBMED"
+}
+},
+{
+"id": 1122,
+"variant": {
+"name": "Amplification"
+},
+"gene": {
+"name": "ERBB2"
+},
+"evidenceLevel": "A",
+"evidenceRating": 4,
+"disease": {
+"name": "Her2-receptor Positive Breast Cancer"
+},
+"drugs": [
+{
+"name": "Trastuzumab"
+}
+],
+"source": {
+"sourceType": "PUBMED"
+}
+},
+{
+"id": 7315,
+"variant": {
+"name": "E542K"
+},
+"gene": {
+"name": "PIK3CA"
+},
+"evidenceLevel": "A",
+"evidenceRating": 3,
+"disease": {
+"id": 22,
+"name": "Breast Cancer"
+},
+"drugs": [
+{
+"name": "Alpelisib"
+},
+{
+    "name": "Fulvestrant"
+}
+],
+"source": {
+"sourceType": "PUBMED"
+}
+},
+{
+"id": 528,
+"variant": {
+"name": "Amplification"
+},
+"gene": {
+"name": "ERBB2"
+},
+"evidenceLevel": "B",
+"evidenceRating": 5,
+"disease": {
+"name": "Her2-receptor Positive Breast Cancer"
+},
+"drugs": [
+{
+"name": "Trastuzumab"
+}
+],
+"source": {
+"sourceType": "PUBMED"
+}
+}
+]
+}
+}
+}

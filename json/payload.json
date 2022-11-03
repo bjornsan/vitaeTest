@@ -1,0 +1,3 @@
+{
+    "query": "{ evidenceItems(status: ACCEPTED, first: 25) { totalCount pageInfo { endCursor hasNextPage } nodes { id status variant { name id variantTypes { name soid } } gene { name id } evidenceType evidenceLevel evidenceRating evidenceDirection phenotypes { id hpoId name } description disease { id doid name diseaseAliases displayName } drugs { id ncitId name drugAliases } source { ascoAbstractId citationId pmcId sourceType title } drugInteractionType } }}"
+}
